@@ -15,6 +15,10 @@ PUMA_TAX <- synth |>
             w = sum(PERWT[INCWAGE >= 168600]),
     .groups = "drop"
   )
+### NOTE: data is for 2024. We don't have later data ###
+### The 168,600 is where you'd change @Andrew. 
+### So like INCwAGE >= 250000 
+### if you want to increase it to 250000
 ###
 PUMA_TO_CD <- read.csv(
   "geocorr2022_2619606869.csv"
